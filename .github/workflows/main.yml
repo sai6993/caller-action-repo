@@ -1,0 +1,13 @@
+# .github/workflows/main.yml
+name: Call Reusable Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-reusable:
+    uses: sai6993/reusable-action-repo/.github/workflows/reusable.yml@main  # 👈 calls from other repo
+    with:
+      username: "Sai Venkat"
