@@ -1,5 +1,4 @@
-# .github/workflows/main.yml
-name: Call Reusable Workflow
+name: Call Multiple Reusable Workflows
 
 on:
   push:
@@ -7,7 +6,12 @@ on:
       - main
 
 jobs:
-  call-reusable:
-    uses: sai6993/reusable-action-repo/.github/workflows/reusable.yml@main  
+  call-reusable-1:
+    uses: sai6993/reusable-action-repo/.github/workflows/reusable.yml@main
+    with:
+      username: "Sai Venkat"
+
+  call-reusable-2:
+    uses: sai6993/my-node-app/.github/workflows/reusable.yml@main
     with:
       username: "Sai Venkat"
