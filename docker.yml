@@ -8,7 +8,7 @@ on:
 
 jobs:
   call-build:
-    uses: sai6993/my-node-app/.github/workflows/build-and-push.yml@main
+    uses: sai6993/my-node-app/.github/workflows/build-and-push.yml@<commit-SHA>
     with:
       tag: "latest"
     secrets:
