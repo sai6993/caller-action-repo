@@ -8,6 +8,6 @@ on:
 
 jobs:
   call-reusable:
-    uses: sai6993/reusable-action-repo/.github/workflows/reusable.yml@main  # 👈 calls from other repo
+    uses: sai6993/reusable-action-repo/.github/workflows/reusable.yml@main  
     with:
       username: "Sai Venkat"
