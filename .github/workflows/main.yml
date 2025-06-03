@@ -10,8 +10,3 @@ jobs:
     uses: sai6993/reusable-action-repo/.github/workflows/reusable.yml@main  
     with:
       username: "Sai Venkat"
-
-  call-reusable-2:
-    uses: sai6993/reusable-action-repo-1/.github/workflows/reusable.yml@main    
-    with:
-      username: "Sai Venkat"
